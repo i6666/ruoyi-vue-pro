@@ -3,6 +3,7 @@ package cn.iocoder.yudao.module.pay.dal.dataobject.refund;
 import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import cn.iocoder.yudao.framework.pay.core.client.dto.refund.PayRefundRespDTO;
 import cn.iocoder.yudao.framework.pay.core.enums.channel.PayChannelEnum;
+import cn.iocoder.yudao.framework.tenant.core.db.TenantBaseDO;
 import cn.iocoder.yudao.module.pay.dal.dataobject.app.PayAppDO;
 import cn.iocoder.yudao.module.pay.dal.dataobject.channel.PayChannelDO;
 import cn.iocoder.yudao.module.pay.dal.dataobject.order.PayOrderDO;
@@ -30,7 +31,7 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class PayRefundDO extends BaseDO {
+public class PayRefundDO extends TenantBaseDO {
 
     /**
      * 退款单编号，数据库自增

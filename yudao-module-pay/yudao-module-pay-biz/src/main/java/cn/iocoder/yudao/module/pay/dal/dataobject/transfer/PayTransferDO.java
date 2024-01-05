@@ -1,9 +1,9 @@
 package cn.iocoder.yudao.module.pay.dal.dataobject.transfer;
 
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import cn.iocoder.yudao.framework.pay.core.enums.channel.PayChannelEnum;
 import cn.iocoder.yudao.framework.pay.core.enums.transfer.PayTransferStatusRespEnum;
 import cn.iocoder.yudao.framework.pay.core.enums.transfer.PayTransferTypeEnum;
+import cn.iocoder.yudao.framework.tenant.core.db.TenantBaseDO;
 import cn.iocoder.yudao.module.pay.dal.dataobject.app.PayAppDO;
 import cn.iocoder.yudao.module.pay.dal.dataobject.channel.PayChannelDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
@@ -24,7 +24,7 @@ import java.util.Map;
 @TableName(value ="pay_transfer", autoResultMap = true)
 @KeySequence("pay_transfer_seq") // 用于 Oracle、PostgreSQL、Kingbase、DB2、H2 数据库的主键自增。如果是 MySQL 等数据库，可不写。
 @Data
-public class PayTransferDO extends BaseDO {
+public class PayTransferDO extends TenantBaseDO {
 
     /**
      * 编号
