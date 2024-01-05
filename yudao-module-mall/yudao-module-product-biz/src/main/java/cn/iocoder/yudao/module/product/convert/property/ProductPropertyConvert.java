@@ -16,8 +16,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
-
 /**
  * 属性项 Convert
  *

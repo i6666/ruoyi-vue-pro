@@ -3,6 +3,7 @@ package cn.iocoder.yudao.module.product.controller.admin.property;
 import cn.hutool.core.collection.CollUtil;
 import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
+import cn.iocoder.yudao.module.product.controller.admin.property.vo.property.ProductPropertyCreateReqVO;
 import cn.iocoder.yudao.module.product.controller.admin.property.vo.property.*;
 import cn.iocoder.yudao.module.product.convert.property.ProductPropertyConvert;
 import cn.iocoder.yudao.module.product.dal.dataobject.property.ProductPropertyDO;
